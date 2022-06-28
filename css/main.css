@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Nunito:ital,wght@0,200;0,500;0,600;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,500&display=swap");
+html {
+  font-family: "Roboto", sans-serif;
+  line-height: 18.75px;
+  font-size: 16px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  padding-left: 150px;
+}
+
+.bar {
+  display: flex;
+  position: fixed;
+  lefT: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  background-color: #191718;
+  width: 150px;
+  transition: ease-in-out 0.2s;
+}
+.bar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  display: block;
+  padding: 15px 0;
+  padding-left: 16px;
+  border-bottom: 1.5px solid #5C5c5c;
+  transition: ease-in-out 0.16s;
+}
+.bar a:hover {
+  background-color: #5C5c5c;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  padding: 0 110px;
+  text-align: center;
+}
+.home .fa-list {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px;
+  font-size: 25px;
+  display: none;
+}
+.home-logo {
+  width: 310px;
+  height: 122px;
+  padding-top: 20px;
+}
+.home-content {
+  background-color: #EFEFEF;
+  margin-top: 30px;
+  padding: 0 10%;
+}
+.home-content h3 {
+  padding-top: 15px;
+}
+.home-content p {
+  padding-bottom: 20px;
+}
+.home-box {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 13px;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+.home-box .box-desc {
+  width: 32%;
+}
+.home-box .box-desc .lorem {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+.home-box .box-desc .lorem img {
+  width: 100px;
+  height: 100px;
+}
+.home-box .box-desc .lorem p {
+  margin: 0;
+}
+.home-box .box-desc .paragraph {
+  font-size: 13px;
+}
+
+@media (max-width: 1380px) {
+  .home-box {
+    padding-left: 18px;
+  }
+  .home-box .box-desc {
+    width: 48%;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    padding: 0;
+  }
+
+  .bar {
+    lefT: -150px;
+  }
+
+  .home .fa-list {
+    display: block;
+  }
+}
+@media (max-width: 805px) {
+  .home-box {
+    padding: 0;
+  }
+  .home-box .box-desc {
+    width: 100%;
+  }
+}
+@media (max-width: 640px) {
+  body {
+    padding: 0;
+  }
+
+  .bar {
+    lefT: -150px;
+  }
+
+  .home {
+    padding: 30px;
+  }
+  .home .fa-list {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
